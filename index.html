@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My favourite movies to watch</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h2>Titles</h2>
+                    <ul id="ulmovies">
+                        <li>
+                            <input type="checkbox" id="1">
+                            <label for="1">Riders of the Lost Ark, 1981, Harrison Ford</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="2">
+                            <label for="2">The Temple of Doom, 1984, Harrison Ford</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="3">
+                            <label for="3">The Last Crusafe, 1989, Harrison Ford</label>
+                        </li>
+                    </ul>
+                    <button class="fa-solid fa-file-circle-xmark" onclick="deleteCheckedMovies()">Remove</button>
+                </div>
+                <div class="column">
+                    <h2>Add movie</h2>
+                    <label for="ftitle">Title:</label>
+                    <input type="text" id="ftitle" name="ftitle"><br>
+                    <label for="fyear">Year:</label>
+                    <input type="text" id="fyear" name="fyear"><br>
+                    <label for="factors">Actors:</label>
+                    <input type="text" id="factors" name="factors"><br>
+                    <button class="fa-solid fa-file-circle-plus" onclick="addMovie()">Add</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="container">
+            <p>&copy; My movies database. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
